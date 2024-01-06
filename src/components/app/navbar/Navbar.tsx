@@ -17,18 +17,14 @@ const Navbar = () => {
   return (
     <nav className="fixed w-screen h-[60px] z-10 top-0 left-0 bg-neutral-800">
       <div className="max-w-screen-xl h-full flex flex-wrap items-center justify-between mx-auto px-4">
-        <div className="flex md:order-2">
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            className="inline-flex items-center p-2 ml-2 justify-center lg:hidden btn-white"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
+        <div className="flex flex-row w-full items-center justify-end gap-4 lg:hidden">
+          <span className="sr-only">Open main menu</span>
+          <Hamburger
             onClick={() => toggleSideNav()}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Hamburger height={24} className="max-w-none text-contrast-high" />
-          </button>
+            height={24}
+            width={24}
+            className="text-contrast-high"
+          />
         </div>
 
         <div
