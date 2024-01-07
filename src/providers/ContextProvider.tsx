@@ -1,10 +1,10 @@
 import ViewProvider from "./ViewProvider";
 
-const InnerContextProvider = ({ children }: { children: React.ReactNode }) => {
+const ContextProvider = ({ children }: { children: React.ReactNode }) => {
   // ==========================================================================
   // RENDER
   // ==========================================================================
   return <ViewProvider>{children}</ViewProvider>;
 };
 
-export default InnerContextProvider;
+export default ContextProvider;
