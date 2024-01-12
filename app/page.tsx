@@ -1,5 +1,12 @@
-import Navbar from "@/src/components/app/navbar/Navbar";
+import ClientOnly from "@/src/components/common/client-only/ClientOnly";
+import Home from "@/src/site-pages/home/Home";
 
-export default function Home() {
-  return <></>;
+export default function Page() {
+  return (
+    <>
+      <ClientOnly>
+        <Home />
+      </ClientOnly>
+    </>
+  );
 }
